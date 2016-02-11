@@ -1,0 +1,188 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'horrorhotel';
+    src: url('fonts/horrh___-webfont.eot');
+    src: url('fonts/horrh___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/horrh___-webfont.woff2') format('woff2'),
+         url('fonts/horrh___-webfont.woff') format('woff'),
+         url('fonts/horrh___-webfont.ttf') format('truetype'),
+         url('fonts/horrh___-webfont.svg#horrorhotel') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'freerideregular';
+    src: url('fonts/freeride-webfont.eot');
+    src: url('fonts/freeride-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/freeride-webfont.woff2') format('woff2'),
+         url('fonts/freeride-webfont.woff') format('woff'),
+         url('fonts/freeride-webfont.ttf') format('truetype'),
+         url('fonts/freeride-webfont.svg#freerideregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    width: 960px;
+    height: 700px;
+    position: relative;
+    margin: auto;
+}
+
+section#overlay {
+    background-color:black;
+    z-index: 6;
+    width:960px;
+    height:700px;
+    position:absolute;
+    opacity:1;
+}
+
+section#bg {
+    background: url(images/background.jpg);
+    z-index: 0;
+    height: 700px;
+    width: 960px;
+    position: relative;
+}
+
+h1#stbutton {
+    color: white;
+    z-index: 55;
+    position: absolute;
+    width:100px;
+    text-align: center;
+    background:red;
+    border-radius: 10px;
+    left:450px;
+    top:300px;
+    font-size: 49px;
+    opacity:1;
+    letter-spacing: 2px;
+    font-family: 'horrorhotel';
+    }
+
+h2#disappear {
+    color: white;
+    font-family: 'horrorhotel';
+    font-size:40px;
+    z-index:40;
+    position:absolute;
+    top:30px;
+    left:700px;
+    width:100px;
+    text-align: right;
+    letter-spacing: 10px;
+}
+
+h3#warning {
+    color: white;
+    font-family: 'horrorhotel';
+    font-size:260px;
+    z-index:41;
+    position:absolute;
+    top:100px;
+    letter-spacing: 40px;
+    width:840px;
+    text-align: center;
+    left:60px;
+}
+
+#textbox {
+    width: 750px;
+    height: 120px;
+    background: black;
+    position: relative;
+    margin: auto;
+    top: 500px;
+    opacity: 0;
+    border-style: dashed;
+    border-color: #601d1d;
+    z-index: 10;
+}
+
+button#next {
+    font-family: 'freerideregular';
+    background:#601d1d;
+    padding:3px;
+    border-style: none;
+    position:absolute;
+    z-index: 12;
+    top:94px;
+    left:715px;
+    opacity:0;
+}
+
+#characters {
+    width: 900px;
+    height: 700px;
+    position:absolute;
+    margin:auto;
+    opacity: 0;
+    z-index: 1;
+}
+
+#characters img {
+    width: 300px;
+    margin-left:130px;
+    margin-top:100px;
+}
+
+p {
+    font-size: 40px;
+    font-family: 'freerideregular';
+    color: white;
+    opacity: 1;
+    padding: 10px;
+}
+
+footer {
+    position:absolute;
+    font-family: 'freerideregular';
+    font-size:20px;
+    top:640px;
+    left:369px;
+}
+
+footer a:link {
+    color: #601d1d;
+    text-decoration: none;
+    margin-right:50px;
+}
+
+footer a:visited {
+    color: #601d1d;
+}
+
+footer a:hover {
+    color: #762727;
+    text-decoration: none;
+}
+
+footer a:active {
+    color: #601d1d;
+}
+
+.typed-cursor {
+    opacity: 1;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
